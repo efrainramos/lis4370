@@ -1,0 +1,28 @@
+---
+title: "Module 12"
+author: "Efrain Ramos"
+date: "4/5/2021"
+output: html_document
+---
+R Markdowns are documents that can be used as reports to show your work.
+
+You can load libraries in RMD files
+```{r}
+library(ggplot2)
+```
+
+You can also examine data
+```{r}
+str(mtcars)
+
+summary(mtcars)
+```
+
+YOu can also visualize data
+```{r}
+pairs(mtcars)
+
+
+ggplot(mtcars, aes(wt, mpg, color = cyl, fill = cyl))+geom_point()+labs(title="MT Cars MPG vs Wt", x="WT", y="MPG")
+
+```
